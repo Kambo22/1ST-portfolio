@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a class="logo" href="#header">
+               <img src="img/Logo.png" alt="logo"/>
+            </a>
+            <ul class="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Outcomes</a></li>
+                <li><a href="#contact">Contact</a></li>                   
+            </ul>
+        </nav>
+        <div class="header-heading">
+            <h3>Hello, My name is</h3>
+            <h1><span>Alexandar</span> Nikolov</h1>
+            <p>I am driven and dedicated to creating outstanding projects, and my ultimate goal is to specialize in the field of videoography in the future!</p>
+            <a class="header-btn" href="#contact">Contact</a>
+        </div>
+        
+    </section>
+
+    <section id="about" data-aos="fade-down">
+        <div class="about-img">
+            <img src="img/About.png" alt="about-image">
+        </div>
+        <div class="about-text" data-aos="fade-up">
+            <h2>Web<span>Developer</span></h2>
+            <h3>I am a driven Web Developer With A Vission</h3>
+            <p>I am an international student from Bulgaria, currently pursuing a specialization in Media within the ICT program at Fontys Hogeschool. 
+               I am dedicated to Delivering the best products possible and doing my best to developing and bettering my professional self
+            </p>
+            <button class="header-btn" href="#work">Read More</button>
+        </div>
+
+    </section>
+
+    <section id="work">
+        <div class="work-heading">
+            <h1>My Outcomes</h1>
+            <p>Here you will read some information about my outcomes</p>
+        </div>
+        <div class="work-container">
+<!--Interactive media-->
+            <div class="work-box" data-aos="fade-left">
+                <div class="work-img">
+                    <img src="img/prototyping.png">
+                </div>
+
+                <div class="work-text">
+                    <h4>Technical skills</h4>
+                    <p>Interactive Media, Design, Development</p>
+                    <a class="header-btn" href="t_skills.html">Read</a>
+                </div>
+            </div>
+<!--Proffesional skills-->
+            <div class="work-box" data-aos="fade-down">
+                <div class="work-img">
+                    <img src="img/persona.png">
+                </div>
+
+                <div class="work-text">
+                    <h4>Proffesional skills</h4>
+                    <p>Research, Communication</p>
+                    <a class="header-btn" href="p_skills.html">Read</a>
+                </div>
+            </div>
+
+<!--Profesional Identity-->
+            <div class="work-box" data-aos="fade-right">
+                <div class="work-img">
+                    <img src="img/Poster.png">
+                </div>
+
+                <div class="work-text">
+                    <h4>Profesional Identity</h4>
+                    <p>Changes in My Profesional Identity</p>
+                    <a class="header-btn" href="pr_identity.html">Read</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!--Contact-->
+    <section id="contact" data-aos="fade-down">
+        <div class="work-heading">
+            <h1>Contact Me</h1>
+            <p>You can ask me questions here</p>
+        </div>
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
