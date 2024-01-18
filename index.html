@@ -5,19 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img\sitelogo.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <section id="header">
         <nav>
             <a class="logo" href="#header">
-               <img src="img/Logo.png" alt="logo"/>
+               <img src="img\Logo.png" alt="logo"/>
             </a>
             <ul class="menu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Outcomes</a></li>
+                <li class="dropdown-item">
+                    <a href="#work">Outcomes ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="i_media.html">Interactive media</a></li>
+                        <li><a href="development.html">Development</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="communication.html">Communication</a></li>
+                        <li><a href="pr_identity.html">Professional Identity</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact">Contact</a></li>                   
             </ul>
         </nav>
@@ -25,14 +38,14 @@
             <h3>Hello, My name is</h3>
             <h1><span>Alexandar</span> Nikolov</h1>
             <p>I am driven and dedicated to creating outstanding projects, and my ultimate goal is to specialize in the field of videoography in the future!</p>
-            <a class="header-btn" href="#contact">Contact</a>
+            <a class="header-btn" href="#about">Read More</a>
         </div>
         
     </section>
 
     <section id="about" data-aos="fade-down">
         <div class="about-img">
-            <img src="img/About.png" alt="about-image">
+            <img src="img\About_img.JPG" alt="about-image">
         </div>
         <div class="about-text" data-aos="fade-up">
             <h2>Web<span>Developer</span></h2>
@@ -40,64 +53,62 @@
             <p>I am an international student from Bulgaria, currently pursuing a specialization in Media within the ICT program at Fontys Hogeschool. 
                I am dedicated to Delivering the best products possible and doing my best to developing and bettering my professional self
             </p>
-            <button class="header-btn" href="#work">Read More</button>
+            <a class="header-btn" href="#contact">Contact Me</a>
         </div>
 
     </section>
 
-    <section id="work">
-        <div class="work-heading">
-            <h1>My Outcomes</h1>
-            <p>Here you will read some information about my outcomes</p>
-        </div>
+    <section class="work" id="work" data-aos="fade-down">
         <div class="work-container">
-<!--Interactive media-->
-            <div class="work-box" data-aos="fade-left">
-                <div class="work-img">
-                    <img src="img/prototyping.png">
-                </div>
-
-                <div class="work-text">
-                    <h4>Technical skills</h4>
-                    <p>Interactive Media, Design, Development</p>
-                    <a class="header-btn" href="t_skills.html">Read</a>
-                </div>
+            <h1>Learning Outcomes</h1>
+            <div class="row">
+                <article class="requirement" data-aos="fade-right">
+                    <i class="bx bxs-color"></i>
+                    <h2>Interactive Media</h2>
+                    <p>Learn more about my ventures in the world of UX design</p>
+                    <a href="i_media.html" class="btn">read more</a>
+                </article>
+                <article class="requirement" data-aos="fade-down">
+                    <i class="bx bx-package"></i>
+                    <h2>Development</h2>
+                    <p>My journey into the world of programming. Tools, challenges and solutions.</p>
+                    <a href="development.html" class="btn">read more</a>
+                </article>
+                <article class="requirement" data-aos="fade-left">
+                    <i class="bx bx-paint"></i>
+                    <h2>Design</h2>
+                    <p>Creating visual masterpieces with the help of different techniques and tools</p>
+                    <a href="design.html" class="btn">read more</a>
+                </article>
+                <article class="requirement" data-aos="fade-right">
+                    <i class="bx bx-search-alt-2"></i>
+                    <h2>Research</h2>
+                    <p>How curiosity can be used for my growth as a Person and as a Proffesional</p>
+                    <a href="research.html" class="btn">read more</a>
+                </article>
+                <article class="requirement" data-aos="fade-up">
+                    <i class="bx bx-message-rounded-dots"></i>
+                    <h2>Communication</h2>
+                    <p>How is communication with our stakeholders and clients handled</p>
+                    <a href="communication.html" class="btn">read more</a>
+                </article>
+                <article class="requirement" data-aos="fade-left">
+                    <i class="bx bx-briefcase"></i>
+                    <h2>Professional Identity</h2>
+                    <p>Reflection on my growth as a person and as a professional.</p>
+                    <a href="pr_identity.html" class="btn">read more</a>
+                </article>
             </div>
-<!--Proffesional skills-->
-            <div class="work-box" data-aos="fade-down">
-                <div class="work-img">
-                    <img src="img/persona.png">
-                </div>
-
-                <div class="work-text">
-                    <h4>Proffesional skills</h4>
-                    <p>Research, Communication</p>
-                    <a class="header-btn" href="p_skills.html">Read</a>
-                </div>
-            </div>
-
-<!--Profesional Identity-->
-            <div class="work-box" data-aos="fade-right">
-                <div class="work-img">
-                    <img src="img/Poster.png">
-                </div>
-
-                <div class="work-text">
-                    <h4>Profesional Identity</h4>
-                    <p>Changes in My Profesional Identity</p>
-                    <a class="header-btn" href="pr_identity.html">Read</a>
-                </div>
-            </div>
-
         </div>
     </section>
+
 <!--Contact-->
     <section id="contact" data-aos="fade-down">
         <div class="work-heading">
             <h1>Contact Me</h1>
             <p>You can ask me questions here</p>
         </div>
-        <form>      
+        <form action="https://formsubmit.co/577ed68bc2e231ecee3746586eb6f217" method="POST">      
             <input name="name" type="text" class="feedback-input" placeholder="Name" />   
             <input name="email" type="text" class="feedback-input" placeholder="Email" />
             <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
